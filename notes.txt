@@ -84,25 +84,24 @@ CHECKLIST 5 - LAUNCH GO / NO GO
 
 ---------------------------------
 
-Vehicle Contorl (V.C.)
+Vehicle Control (V.C.)
 Ground Control (G.C.)
 Ground Software (G.S.)
-Propulsion (prop)
-Avionics (a.v.i.)
-radiation (rad)
+Propulsion (Prop)
+Avionics (A.V.I.)
+Radiation (Rad)
 Flight Software
-Guidance / navigation / Control (G.N.C.)
-Ground Systems (ground)
-Range Coordinator (r.c.)
-recovery
-Flight Terminstion System (f.t.s)
-Operations safety manager (o.s.m.)
-flight saftey program officer (fispo)
-Range operations coordinator (roc[k])
-mission manager ()
-chief engineer (c.e.)
-launch manager (l.m.)
-launch director (l.d.)
+Guidance / Navigation / Control (G.N.C.)
+Ground Systems (Ground)
+Range Coordinator (R.C.)
+Recovery
+Flight Terminstion System (F.T.S)
+Operations safety manager (O.S.M.)
+Flight Saftey Program Officer (Fispo)
+Range Operations Coordinator (roc[k])
+Mission Manager
+Chief Engineer (C.E.)
+Launch Manager (L.M.)
+Launch Director (L.D.)
 
 https://en.wikipedia.org/wiki/Flight_controller
-
