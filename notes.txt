@@ -1,0 +1,66 @@
+Flight Weather Director (AB)
+Range and Safety Office (RSO) - (JB)
+Ground Controller (GC) - (MS)
+Flight Controller (BB)
+Recovery (AB/BB)
+
+
+PRE-FLIGHT CHECKLIST:
+
+WEATHER:
+	RAIN
+	FOG
+	HIGH ALTITUDE WIND
+	LOW ALTITUDE WIND
+	LIGHTNING
+	TEMPERATURE
+	HUMIDITY
+
+SAFETY AND RANGE:
+	RANGE:
+		GROUND:
+			PEOPLE
+			VEHICLES
+			ANIMALS
+		AIR:
+			BIRDS
+
+	SAFETY:
+		LAUNCH PAD
+		FIRE HAZARD:
+			EXTINGUISHER - PRESENT
+			EXTINGUISHER - CHARGE AND OPERATIONAL
+		HEARING PROECTION
+
+GROUND CONTROLLER:
+	LAUNCH PAD
+	ROCKET STRUCTUAL INTEGRITY:
+		PROPULSION
+		CONTROLS SYSTEM
+		PARACHUTE LOADING
+
+
+---------------------------------
+
+Vehicle Contorl (V.C.)
+Ground Control (G.C.)
+Ground Software (G.S.)
+Propulsion (prop)
+Avionics (a.v.i.)
+radiation (rad)
+Flight Software
+Guidance / navigation / Control (G.N.C.)
+Ground Systems (ground)
+Range Coordinator (r.c.)
+recovery
+Flight Terminstion System (f.t.s)
+Operations safety manager (o.s.m.)
+flight saftey program officer (fispo)
+Range operations coordinator (roc[k])
+mission manager ()
+chief engineer (c.e.)
+launch manager (l.m.)
+launch director (l.d.)
+
+https://en.wikipedia.org/wiki/Flight_controller
+
