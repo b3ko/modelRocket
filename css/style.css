@@ -22,8 +22,13 @@ h4 {
 
 .clock {
   background-color: #090909;
-  border: 1px yellow solid;
+  border: 2px yellow solid;
   color: yellow;
   font-family: "Consolas", "Lucida Console";
   font-size: 2em;
+  margin: 5px;
+}
+
+.hack {
+  height: 40px;
 }

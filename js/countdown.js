@@ -1,7 +1,7 @@
 //global vars === yuck
 start = new Date();
-hours = 0;
-minutes = 02;
+hours = 1;
+minutes = 00;
 seconds = 00;
 
 //wait for doc and then GO!
