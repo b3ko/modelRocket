@@ -1,3 +1,7 @@
+h4 {
+  padding-top: 9px;
+}
+
 .btn-checklist {
   border-radius: 100%;
   padding: 3px;
@@ -16,6 +20,10 @@
   padding: 11px;
 }
 
-h4 {
-  padding-top: 9px;
+.clock {
+  background-color: #090909;
+  border: 1px yellow solid;
+  color: yellow;
+  font-family: "Consolas", "Lucida Console";
+  font-size: 2em;
 }
