@@ -1,0 +1,21 @@
+.btn-checklist {
+  border-radius: 100%;
+  padding: 3px;
+  margin: 3px;
+}
+
+.fa-rocket {
+    padding: 11px;
+}
+
+.fa-warning {
+  padding: 10px;
+}
+
+.fa-remove  {
+  padding: 11px;
+}
+
+h4 {
+  padding-top: 9px;
+}
