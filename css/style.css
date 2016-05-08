@@ -6,12 +6,17 @@ h4 {
   padding-top: 9px;
 }
 
+/*checklist section*/
+.checklist {
+  padding-top: 220px;
+}
+
 .btn-checklist {
   border-radius: 100%;
   padding: 3px;
   margin: 3px;
 }
-
+/*buttons*/
 .fa-rocket {
     padding: 11px;
 }
@@ -22,10 +27,12 @@ h4 {
 
 .fa-remove  {
   padding: 11px;
-}
+}  /*end of buttons*/
+/*end of checklist section*/
 
+/*top of page - status buttons*/
 .stats {
-  background-color: #777777;
+  background-color: #111111;
   color: #00ff00;
   margin: 2px;
 }
@@ -51,32 +58,14 @@ h4 {
    color: #777777;
    background-color: #dddddd;
 }
+/*end of status section*/
 
-
-
+/*clock*/
 .clock {
-  background-color: #777777;
+  background-color: #111111;
   border: 4px #00ff00 solid;
   color: #00ff00;
   font-size: 2em;
   margin: 100px 0px 5px 0px;
   padding: 40px 0px;
-}
-
-.checklist {
-  padding-top: 220px;
-}
-
-.wrapper {
-    width:100%;
-    position:fixed;
-    z-index:10;
-    background:inherit;
-}
-
-.bottom-wrapper {
-    width:100%;
-    z-index:5;
-    padding-top: 215px;
-    overflow:auto;
 }
