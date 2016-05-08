@@ -1,180 +1,203 @@
 <!DOCTYPE html>
 <html >
-  <head>
-    <meta charset="UTF-8">
-    <title>ModelRocket</title>
+<head>
+  <meta charset="UTF-8">
+  <title>ModelRocket</title>
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-        <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-<div class="container-fluid">
-
-  <div id="clock" class="row clock navbar-fixed-top">
-    <div class="col-xs-12 hack"></div>
-    <div class="col-xs-2 col-xs-offset-1 text-center" id="hours"></div>
-    <div class="col-xs-2 text-center">:</div>
-    <div class="col-xs-2 text-center" id="minutes"></div>
-    <div class="col-xs-2 text-center">:</div>
-    <div class="col-xs-2 text-center" id="seconds"></div>
-    <div class="col-xs-12 hack"></div>
-  </div>
-
-  <hr>
-  <div class="checklist">
-  <div>
-    <h3>WEATHER:</h3>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>RAIN:</h4></div>
-    <div class="col-xs-2 col-xs-offset-1"><button id="rain-go" type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button id="rain-hold" type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button id="rain-abort" type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>FOG:</h4></div>
-    <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>HIGH ALT. WIND:</h4></div>
-    <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>LOW ALT. WIND:</h4></div>
-    <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>LIGHTNING:</h4></div>
-    <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>TEMPERATURE:</h4></div>
-    <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>HUMIDITY:</h4></div>
-    <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <hr>
-  <div>
-    <h3>SAFETY:</h3>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>RANGE - GROUND:</h4>
+  <div class="container-fluid">
+    <div class="row stats text-center navbar-fixed-top" id="status">
+      <div id="run" class="col-xs-3 stat">RUNNING</div>
+      <div id="weather" class="col-xs-3 stat">Clear - Rain: 0%</div>
+      <div id="windDir" class="col-xs-3 stat"><i class="fa fa-compass fa-3x" aria-hidden="true"></i></div>
+      <div id="launch" class="col-xs-3 stat ">LAUNCH</div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>PEOPLE:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>ANIMALS:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>VEHICLES:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>RANGE - AIR:</h4>
+    <div id="clock" class="row clock navbar-fixed-top text-center">
+      <div class="col-xs-12"></div>
+      <div class="col-xs-2 col-xs-offset-1" id="hours"></div>
+      <div class="col-xs-2">:</div>
+      <div class="col-xs-2" id="minutes"></div>
+      <div class="col-xs-2">:</div>
+      <div class="col-xs-2" id="seconds"></div>
+      <div class="col-xs-12"></div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>BIRDS:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>AIRPLANES:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
+    <hr>
+    <div class="checklist">
+      <div>
+        <h3>WEATHER:</h3>
+      </div>
 
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>POWERLINES:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>RAIN:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button id="rain-go" type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button id="rain-hold" type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button id="rain-abort" type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
 
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-1">
-      <h4>FIRE HAZARD:</h4>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>FOG:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>HIGH ALT. WIND:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>LOW ALT. WIND:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>LIGHTNING:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>TEMPERATURE:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>HUMIDITY:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <hr>
+      <div>
+        <h3>SAFETY:</h3>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>RANGE - GROUND:</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>PEOPLE:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>ANIMALS:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>VEHICLES:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>RANGE - AIR:</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>BIRDS:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>AIRPLANES:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>POWERLINES:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>FIRE HAZARD:</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>EXTINGUISHER - PRESENT:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2">
+          <h4>EXTINGUISHER - WORKING AND READY:</h4>
+        </div>
+        <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      
+
     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>EXTINGUISHER - PRESENT:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
 
-  <div class="row">
-    <div class="col-xs-4 col-xs-offset-2">
-      <h4>EXTINGUISHER - WORKING AND READY:</h4></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
-    <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
-  </div>
-</div>
-</div>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-  <script src="js/index.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="js/index.js"></script>
 
   </body>
-</html>
+  </html>

@@ -64,6 +64,9 @@ function countdown() {
       }
       $("#clock").css("color", "#00ff00");
       $("#clock").css("border-color", "#00ff00");
+      $("#run").text("RUNNING");
+      $("#run").css("color","#00ff00");
+      $("#run").css("border-color","white");
     }
 
     if ($(this).hasClass("btn-warning")) {
@@ -74,6 +77,9 @@ function countdown() {
       isRunning = false;
       $("#clock").css("color", "#ffe600");
       $("#clock").css("border-color", "#ffe600");
+      $("#run").text("HOLD");
+      $("#run").css("color","#ffe600");
+      $("#run").css("border-color","#ffe600");
     }
 
     if ($(this).hasClass("btn-danger")) {
@@ -84,6 +90,10 @@ function countdown() {
       isRunning = false;
       $("#clock").css("color","red");
       $("#clock").css("border-color", "#ff0000");
+      $("#run").text("ABORT");
+      $("#run").css("color","#black");
+      $("#run").css("background-color","#ff0000");
+      $("#run").css("border-color","#black");
     }
   });
 

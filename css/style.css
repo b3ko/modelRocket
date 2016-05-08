@@ -1,3 +1,7 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+}
+
 h4 {
   padding-top: 9px;
 }
@@ -20,19 +24,59 @@ h4 {
   padding: 11px;
 }
 
-.checklist {
-  padding-top: 100px;
+.stats {
+  background-color: #777777;
+  color: #00ff00;
+  margin: 2px;
 }
+
+#run {
+  border: 2px solid white;
+   padding: 20px 0px 42px 0px;
+}
+
+#weather {
+  border: 2px solid white;
+   padding: 20px 0px 42px 0px;
+}
+
+#windDir {
+  border: 2px solid white;
+   padding: 20px 0px 20px 0px;
+}
+
+#launch {
+  border: 2px solid white;
+   padding: 20px 0px 42px 0px;
+   color: #777777;
+   background-color: #dddddd;
+}
+
+
 
 .clock {
-  background-color: #090909;
+  background-color: #777777;
   border: 4px #00ff00 solid;
   color: #00ff00;
-  font-family: "Consolas", "Lucida Console";
   font-size: 2em;
-  margin: 5px;
+  margin: 100px 0px 5px 0px;
+  padding: 40px 0px;
 }
 
-.hack {
-  height: 40px;
+.checklist {
+  padding-top: 220px;
+}
+
+.wrapper {
+    width:100%;
+    position:fixed;
+    z-index:10;
+    background:inherit;
+}
+
+.bottom-wrapper {
+    width:100%;
+    z-index:5;
+    padding-top: 215px;
+    overflow:auto;
 }
