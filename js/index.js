@@ -50,12 +50,6 @@ function countdown() {
 /*****************************
  //this function seems very repetitive -- NEEDS TO BE refactored!
 
-  //bug - if you have an abort and a hold selected in different rows, and then clear all the aborts the clock stays red.
-  need to add logic to go with highest level of warning (so green only when all green, orange only when no reds, 
-  and when red is all cleared check for orange before setting to green.
-  but don't stay on red.)
-
-
   refactor ideas:
   1) break into smaller functions
   2) take code that is repeated (other than colors that are used) and pass in a parameter that will grab the approriate values from an array.
@@ -79,6 +73,17 @@ function countdown() {
           holdCount--;
         }
       }
+
+      if (abortCount == 0 && holdCount > 0) 
+      {
+        $("#clock").css("color", "#ffe600");
+          $("#clock").css("border-color", "#ffe600");
+          $("#run").text("HOLD");
+          $("#run").css("color","#ffe600");
+          $("#run").css("background-color","#111111");
+          $("#run").css("border-color","#ffe600");
+      }
+
       if(abortCount == 0 && holdCount == 0) { //only start the clock and update status if all holds and aborts are cleared
         if(!isRunning) {  //if the clock was stopped start it again
           isRunning = true;
@@ -95,6 +100,10 @@ function countdown() {
 
     //a HOLD was clicked ...update the button, the rest of row, clock, stop the clock, update the status
     if ($(this).hasClass("btn-warning")) {
+      if ($(this).closest(".row").find(".btn").hasClass("abort") ) {
+        abortCount--;
+        $(this).closest(".row").find(".btn").removeClass("hold");
+      }
       if( $(this).closest(".row").find(".btn").hasClass("hold"))
         { }
       else {
