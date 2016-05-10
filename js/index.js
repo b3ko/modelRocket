@@ -102,7 +102,7 @@ function countdown() {
     if ($(this).hasClass("btn-warning")) {
       if ($(this).closest(".row").find(".btn").hasClass("abort") ) {
         abortCount--;
-        $(this).closest(".row").find(".btn").removeClass("hold");
+        $(this).closest(".row").find(".btn").removeClass("abort");
       }
       if( $(this).closest(".row").find(".btn").hasClass("hold"))
         { }
