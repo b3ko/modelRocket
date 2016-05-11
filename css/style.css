@@ -6,19 +6,76 @@ h4 {
   padding-top: 9px;
 }
 
+.btn-checklist {
+  border-radius: 100%;
+  padding: 3px;
+  margin: 3px;
+  border: 2px solid;
+  
+}
+
+.btn-success {
+	background-color: #555555;
+	border-color: #00ff00;
+	color: rgba(0, 255, 0, .4);
+}
+
+.btn-warning {
+	background-color: #555555;
+	border-color: #ffe600;
+	color: rgba(255, 230, 00, .4);
+}
+
+.btn-danger {
+	background-color: #555555;
+	border-color: red;
+	color: rgba(255, 0, 0, .4);
+}
+
+
+
+.go  {
+	background-color: #00ff00;
+	color: white;
+}
+
+.go:focus {
+	background-color: #00ff00;
+}
+
+.hold 
+{
+	background-color: #ffe600;
+	color: white;
+}
+.hold:focus {
+	background-color: #ffe600;
+}
+
+
+.abort {
+	background-color: red;
+	color: white;
+}
+
+.abort:focus{
+	background-color: red;
+}
+
+
+
+
+
 /*checklist section*/
 .checklist {
   padding-top: 220px;
 }
 
-.btn-checklist {
-  border-radius: 100%;
-  padding: 3px;
-  margin: 3px;
-}
+
 /*buttons*/
 .fa-rocket {
     padding: 11px;
+	
 }
 
 .fa-warning {
