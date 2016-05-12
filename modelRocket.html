@@ -14,6 +14,9 @@
 <body>
 
   <div class="container-fluid">
+    <div class="row mask navbar-fixed-top">
+      <br><br><br><br><br>
+    </div>
     <div class="row stats text-center navbar-fixed-top" id="status">
       <div id="run" class="col-xs-3 stat">RUNNING</div>
       <div id="weather" class="col-xs-3 stat">Clear - Rain: 0%</div>
@@ -192,7 +195,92 @@
         <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
       </div>
 
+      <hr>
+      
+      <div>
+        <h3>Ground Controller:</h3>
+      </div>
 
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>LAUNCH PAD - CHECKLIST 1:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button id="rain-go" type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button id="rain-hold" type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button id="rain-abort" type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>PARACHUTE - CHECKLIST 2:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>PROPULSION - CHECKLIST 3:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>LOAD ON LAUNCH PAD - CHECKLIST 4:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>GO/NO GO - CHECKLIST 5:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>INSERT LAUNCH KEY:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>COUNTDOWN:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>LIFTOFF:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
+    
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-1">
+          <h4>RECOVERY:</h4>
+        </div>
+        <div class="col-xs-2 col-xs-offset-1"><button type="button" class="btn btn-success btn-checklist"><i class="fa fa-rocket fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-warning btn-checklist"><i class="fa fa-warning fa-2x"></i></button></div>
+        <div class="col-xs-2"><button type="button" class="btn btn-danger btn-checklist"><i class="fa fa-remove fa-2x"></i></button></div>
+      </div>
 
     </div>
 

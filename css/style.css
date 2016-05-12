@@ -1,5 +1,5 @@
 body {
-    font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h4 {
@@ -62,20 +62,17 @@ h4 {
 	background-color: red;
 }
 
-
-
-
-
 /*checklist section*/
 .checklist {
   padding-top: 220px;
+  z-index: 1;
 }
 
 
 /*buttons*/
 .fa-rocket {
-    padding: 11px;
-	
+  padding: 11px;
+
 }
 
 .fa-warning {
@@ -84,45 +81,51 @@ h4 {
 
 .fa-remove  {
   padding: 11px;
-}  /*end of buttons*/
-/*end of checklist section*/
+  }  /*end of buttons*/
+  /*end of checklist section*/
 
-/*top of page - status buttons*/
-.stats {
-  background-color: #111111;
-  color: #00ff00;
-  margin: 2px;
-}
+  /*top of page - status buttons*/
+  .stats {
+    background-color: #111111;
+    color: #00ff00;
+    margin: 2px;
+  }
 
-#run {
-  border: 2px solid white;
-   padding: 20px 0px 42px 0px;
-}
+  #run {
+    border: 2px solid white;
+    padding: 20px 0px 42px 0px;
+  }
 
-#weather {
-  border: 2px solid white;
-   padding: 20px 0px 42px 0px;
-}
+  #weather {
+    border: 2px solid white;
+    padding: 20px 0px 42px 0px;
+  }
 
-#windDir {
-  border: 2px solid white;
-   padding: 20px 0px 20px 0px;
-}
+  #windDir {
+    border: 2px solid white;
+    padding: 20px 0px 20px 0px;
+  }
 
-#launch {
-  border: 2px solid white;
-   padding: 20px 0px 42px 0px;
-   color: #777777;
-   background-color: #dddddd;
-}
-/*end of status section*/
+  #launch {
+    border: 2px solid white;
+    padding: 20px 0px 42px 0px;
+    color: #777777;
+    background-color: #dddddd;
+  }
+  /*end of status section*/
 
-/*clock*/
-.clock {
-  background-color: #111111;
-  border: 4px #00ff00 solid;
-  color: #00ff00;
-  font-size: 2em;
-  margin: 100px 0px 5px 0px;
-  padding: 40px 0px;
-}
+  /*clock*/
+  .clock {
+    background-color: #111111;
+    border: 4px #00ff00 solid;
+    color: #00ff00;
+    font-size: 2em;
+    margin: 100px 0px 5px 0px;
+    padding: 40px 0px;
+    z-index: 100;
+  }
+
+  .mask {
+    z-index: 50;
+    background-color: white;
+  }
